@@ -17,11 +17,9 @@ public class HotelReservationApp {
 
     void startApp (){
 
-        // Create Frame, size, layout, widows closer
+        // Create Frame, size
         JFrame appFrame = new JFrame(appName + " Hotel Reservation APP");
         appFrame.setSize(500, 800);
-        appFrame.setLayout(new GridLayout(5, 1));
-        appFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         // Hotel Arrays
         String[] hotels = {"Fraser Suites", "Nordic Hotel", "Transcorp Hilton", "Sheraton Hotel", "The Envoy Hotel"};
@@ -44,11 +42,14 @@ public class HotelReservationApp {
             });
         }
 
+        // Set layout, default close operation and visibility
+        appFrame.setLayout(new GridLayout(5, 1));
+        appFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         appFrame.setVisible(true);
     }
 
     void bedCountPage(String hotelName){
-        // Create Frame, size, layout, widows closer
+        // Create Frame, size,
         JFrame appFrame = new JFrame(appName + " Hotel Reservation APP");
         appFrame.setSize(500, 800);
 
@@ -74,6 +75,7 @@ public class HotelReservationApp {
             });
         }
 
+        // Set layout, default close operation and visibility
         appFrame.setLayout(new GridLayout(3, 2));
         appFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         appFrame.setVisible(true);
